@@ -5,6 +5,11 @@ body{
     background-color: #ddd;
 }
 
+.head{
+    text-align: center;
+    color: #FF4B04;
+}
+
 .container {
     padding: 50px 70px;
     font-family: 'Raleway', sans-serif;
@@ -103,21 +108,14 @@ ul{
     background-color: #ccc;
     padding: 10px;
     border-radius: 6px;
-    transition: transform 0.3s;
 }
 .trigger:hover{
-    transform: scale(1.05);
     cursor:pointer;
-    box-shadow: 0px 4px 2px #FF4B04;
-    border: 1px solid #FF4B04;
 }
 
 .trigger.active{
     background-color: #FF4B04;
     color: white;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 2px rgba(0,0,0,0.2);
-    border: 1px solid #ccc;
 
 }
 
@@ -129,4 +127,40 @@ ul{
 }
 .content.active{
     display: block;
+}
+
+/* Toast */
+
+.toast-section {
+    position: relative;
+    margin-top: 30px;
+}
+
+.toast{
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    background-color: #FF4B04;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0px 0px 16px 16px;
+    left: 50%;
+    margin-left: -170px;
+    text-align: center;
+    top: 0px;
+    margin-top: -100px;
+    transition: all 0.2s;
+}
+
+.toast.active{
+    margin-top: 0px;
+}
+
+.toast-btn{
+    width: 250px;
+    background-color: #FF4B04;
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
 }
