@@ -11,8 +11,9 @@
 </head>
 <body>
 <div class="container">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor placeat vel quaerat a rem quasi quibusdam voluptatibus dolorem dolorum tempora neque fuga quam esse, praesentium harum dolores maxime quia deserunt sapiente voluptatem <span class="tip-area" data-message="I'm a tooltip!">sequi nisi eligendi</span>. Autem deleniti, fugit similique corporis rerum suscipit? Cupiditate, fugiat?
-
+    <section class="tooltip-section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor placeat vel quaerat a rem quasi quibusdam voluptatibus dolorem dolorum tempora neque fuga quam esse, praesentium harum dolores maxime quia deserunt sapiente voluptatem <span class="tip-area" data-message="I'm a tooltip!">sequi nisi eligendi</span>. Autem deleniti, fugit similique corporis rerum suscipit? Cupiditate, fugiat?
+    </section>
     <section class="dropdowns">
         <h1>Dropdowns</h1>
         <div class="dropdown">
@@ -24,9 +25,38 @@
             <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem odit labore maiores repellendus libero explicabo architecto numquam voluptate nobis vel, eos voluptatem laboriosam commodi fuga eius itaque quia tenetur saepe asperiores! Deleniti molestiae labore dolor odio fugit! Debitis voluptatum nemo iusto ipsum, officiis ipsam!</div>
         </div>
     </section>
+
+    <section class="tabbedcontents">
+        <h2>Tabbed Contents</h2>
+        <div class="tabs">
+            <ul>
+                <li class="trigger active" data-target="#frontend">Front End</li>
+                <li class="trigger" data-target="#backend">Back End</li>
+                <li class="trigger" data-target="#fullstack">Full Stack</li>
+            </ul>
+            
+        
+            <div class="contents">
+                <div class="content active" id="frontend">
+                    <h3>Frontend</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat libero quasi quaerat dolorum praesentium! A autem minima provident totam placeat aspernatur hic pariatur aliquid, magni tempore recusandae tenetur velit sit nesciunt tempora enim beatae at consequatur ea eum voluptate nemo. Vero nostrum accusamus iusto alias?</p>
+                </div>
+                <div class="content" id="backend">
+                    <h3>Back End</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt magnam nobis ipsum quidem ex doloremque aliquam veritatis odit. Libero id recusandae ullam quo cumque!</p>
+                </div>
+                <div class="content" id="fullstack">
+                    <h3>Full Stack</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas porro molestias voluptatibus consectetur nobis itaque vero impedit fugiat dolorem dolores corporis laudantium eveniet nulla a, cum repellat qui ratione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 <script src="tooltip.js"></script>
 <script src="dropdown.js"></script>
+<script src="tabbedcontent.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
