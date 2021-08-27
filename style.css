@@ -1,0 +1,40 @@
+.tip-area{
+    color: #FF4B04;
+    border-bottom: 1px dotted #FF4B04;
+    position: relative;
+}
+.tip-area:hover{
+    cursor:help;
+}
+
+.tip{
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -75px;
+    background-color: #FF4B04;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tip.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border: 4px solid white;
+    border-top-color: #FF4B04;
+
+}
